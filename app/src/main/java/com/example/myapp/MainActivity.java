@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         findViewById(R.id.tv).setOnClickListener(v -> {
-            Toast.makeText(this, "Matebook14900-09", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "华为世界第一！", Toast.LENGTH_SHORT).show();
         });
     }
 }
