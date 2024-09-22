@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="10dp"
+        android:background="#909090"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/bg"
+        android:layout_width="900dp"
+        android:layout_height="844dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/imageButton"
+        style="@style/Theme.AppCompat.Light"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginBottom="116dp"
+        android:background="#009688"
+        android:textSize="36sp"
+        android:text="99"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/imageButton2"
+        style="@style/Theme.AppCompat.Light"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_marginStart="30dp"
+        android:textSize="36sp"
+        android:text="88"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:background="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton"
+        app:layout_constraintStart_toEndOf="@+id/imageButton"
+        app:layout_constraintTop_toTopOf="@+id/imageButton"
+        tools:ignore="UsingOnClickInXml" />
+
+    <TextView
+        android:id="@+id/imageButton3"
+        style="@style/Theme.AppCompat.Light"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_marginStart="30dp"
+        android:background="#000000"
+        android:textSize="36sp"
+        android:text="77"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton"
+        app:layout_constraintStart_toEndOf="@+id/imageButton2"
+        app:layout_constraintTop_toTopOf="@+id/imageButton"
+        tools:ignore="UsingOnClickInXml" />
+
+    <TextView
+        android:id="@+id/imageButton4"
+        style="@style/Theme.AppCompat.Light"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_marginStart="230dp"
+        android:background="#000000"
+        android:textSize="36sp"
+        android:text="66"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton"
+        app:layout_constraintStart_toEndOf="@+id/imageButton3"
+        app:layout_constraintTop_toTopOf="@+id/imageButton"
+        tools:ignore="UsingOnClickInXml" />
+
+    <TextView
+        android:visibility="gone"
+        android:layout_width="90dp"
+        android:layout_height="2200dp"
+        android:layout_marginStart="120dp"
+        android:background="#FFEB3B"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -10,8 +10,8 @@ android {
         applicationId = "com.example.myapp"
         minSdk = 30
         targetSdk = 34
-        versionCode = 1
-        versionName = "1.0"
+        versionCode = 1000
+        versionName = "1.0.00"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -40,4 +40,9 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
+
+    //implementation 'com.orhanobut:logger:2.1.1'
+    //格式    implementation （“组”，“名字”，“版本号”）
+   implementation("com.orhanobut","logger","2.1.1")
+
 }
