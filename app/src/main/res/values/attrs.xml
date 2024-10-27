@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="IOSButton">
+        <attr format="color" name="check_color"/>
+        <attr format="color" name="uncheck_color"/>
+        <attr format="color" name="thumb_color"/>
+        <attr format="boolean" name="check"/>
+    </declare-styleable>
+
+</resources>

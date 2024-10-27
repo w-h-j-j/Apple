@@ -1,46 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <androidx.viewpager.widget.ViewPager
-        android:id="@+id/vp"
+    <FrameLayout
+        android:id="@+id/layout_fragment"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"/>
+        android:layout_height="match_parent">
+    </FrameLayout>
 
-    <RadioGroup
-        android:id="@+id/rg"
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:orientation="horizontal"
-        app:layout_constraintTop_toBottomOf="@+id/vp">
-        <RadioButton
-            android:id="@+id/btn_adapter"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="适配"
-            android:checked="true"
-            android:textSize="25sp"/>
-        <RadioButton
-            android:id="@+id/btn_cancel_adapter"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="未适配"
-            android:textSize="25sp"/>
-
-    </RadioGroup>
-
-
-
-
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

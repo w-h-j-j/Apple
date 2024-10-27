@@ -43,6 +43,16 @@ dependencies {
 
     //implementation 'com.orhanobut:logger:2.1.1'
     //格式    implementation （“组”，“名字”，“版本号”）
-   implementation("com.orhanobut","logger","2.1.1")
+    implementation("com.orhanobut","logger","2.1.1")
+
+    implementation("com.squareup.okhttp3","okhttp","4.9.1")
+
+    implementation("io.reactivex.rxjava2","rxandroid","2.0.1")
+    implementation("io.reactivex.rxjava2","rxjava","2.0.7")
+
+    implementation("com.squareup.retrofit2","retrofit","2.9.0")
+    implementation("com.squareup.retrofit2","converter-gson","2.9.0")
+
+    implementation("com.yayaG.iosSwitchButton","iosswitchbutton","1.0.3")
 
 }
