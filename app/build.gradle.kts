@@ -8,13 +8,48 @@ android {
 
     defaultConfig {
         applicationId = "com.example.myapp"
-        minSdk = 30
+        minSdk = 26
         targetSdk = 34
         versionCode = 1000
         versionName = "1.0.00"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
+
+    val listSubFiles = {
+        val  resFolder = "src/main/res/layout"
+        val files = file(resFolder).listFiles()
+        val folders = mutableListOf<String>()
+        files.forEach { item -> folders.add(item.absolutePath) }
+        folders.add(file(resFolder).parentFile.absolutePath)
+        folders
+    }
+
+    sourceSets{
+        getByName("main"){
+            res.srcDirs(listSubFiles)
+            res.srcDirs(
+
+                "src/main/res/layout/layout",
+                "src/main/res/dimens_",
+                "src/main/res/layout",
+                "src/main/res",
+
+                "src/main/res/layout/res30/layout_05",
+                "src/main/res/layout/res30/layout_04",
+                "src/main/res/layout/res30/layout_03",
+                "src/main/res/layout/res30/layout_02",
+                "src/main/res/layout/res30/layout_01",
+                "src/main/res/layout/res30/layout",
+                "src/main/res/layout/res30",
+            )
+//            jniLibs.srcDirs(
+//                "libs"
+//            )
+        }
+    }
+
+
 
     buildTypes {
         release {
@@ -55,4 +90,5 @@ dependencies {
 
     implementation("com.yayaG.iosSwitchButton","iosswitchbutton","1.0.3")
 
+    implementation("com.amap.api","3dmap","9.8.2")
 }

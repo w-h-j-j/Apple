@@ -1,7 +1,6 @@
 package com.example.myapp.utils;
 
 import android.app.Application;
-
 import com.orhanobut.logger.AndroidLogAdapter;
 import com.orhanobut.logger.Logger;
 
