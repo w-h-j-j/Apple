@@ -11,7 +11,7 @@ android {
         minSdk = 26
         targetSdk = 34
         versionCode = 1000
-        versionName = "1.0.00"
+        versionName = "1.0.01"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -72,6 +72,7 @@ dependencies {
     implementation(libs.material)
     implementation(libs.activity)
     implementation(libs.constraintlayout)
+    implementation(files("libs\\FitCSVTool.jar"))
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
@@ -91,4 +92,12 @@ dependencies {
     implementation("com.yayaG.iosSwitchButton","iosswitchbutton","1.0.3")
 
     implementation("com.amap.api","3dmap","9.8.2")
+
+    //implementation("com.amap.api","location","3.3.0")
+    implementation("com.amap.api","search","5.0.0")
+    //implementation("com.garmin","fit","21.107")
+
+//    compile 'com.amap.api:3dmap:5.0.0'
+//    compile 'com.amap.api:location:3.3.0'
+//    compile 'com.amap.api:search:5.0.0'
 }
